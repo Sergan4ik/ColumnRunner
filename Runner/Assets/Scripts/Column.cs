@@ -13,10 +13,13 @@ public class Column : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        if (GameManager.Instance.gameStarted && Player.instance.playerStats.IsAlive)
+        {
+            Move();
+        }
     }
     void Move()
     {
-        this.transform.Translate(moveDirection * Time.deltaTime * World.worldSpeed , Space.World);
+        this.transform.Translate(Time.deltaTime * World.worldSpeed * moveDirection , Space.World);
     }
 }

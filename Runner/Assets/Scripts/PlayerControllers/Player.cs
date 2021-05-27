@@ -16,11 +16,8 @@ public class Player : MonoBehaviour
     public static Player instance { get; set; }
     private void Awake()
     {
-        instance = this;
-    }
-    private void Start()
-    {
-        StartRun();
+        if (instance == null)
+            instance = this;
     }
     private void Update()
     {
@@ -66,8 +63,8 @@ public class Player : MonoBehaviour
     {
         playerModel.gameObject.SetActive(false);
         GameObject curRagdoll = Instantiate(ragdoll.ragdoll, playerModel.transform.position , Quaternion.identity) as GameObject;
-        Ragdoll rgd = curRagdoll.GetComponent<Ragdoll>();
-        rgd.SetCameraLook();
+        CameraController.Instance.ragdoll = curRagdoll;
+        CameraController.Instance.SetCameraLookToRagdoll();
         curRagdoll.transform.parent = this.transform;
     }
 }

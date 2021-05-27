@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -78,7 +79,14 @@ public class ShootCannonBall : MonoBehaviour
         Vector3 spawnPoint = GetLandingBallPoint();
         float angle = GetMarkerRotateAngle();
         marker.GetComponent<Marker>().duration = cannonRotator.GetExpectedTimeToHit() * 1.5f;
-        Instantiate(marker, spawnPoint, Quaternion.Euler(0, 0, angle));
+        GameObject s_m = Instantiate(marker, spawnPoint, Quaternion.Euler(0, 0, angle)) as GameObject;
+        bool trash;
+        RaycastHit hit = GetLandingBallInfo(out trash);
+        if (trash)
+        {
+            s_m.transform.parent = hit.transform;
+        }
+        
     }
 
     float GetMarkerRotateAngle()
@@ -94,14 +102,28 @@ public class ShootCannonBall : MonoBehaviour
         return angle;
     }
 
-    Vector3 GetLandingBallPoint()
+    RaycastHit GetLandingBallInfo(out bool isHitted)
     {
         Vector3 expectedPos = cannonRotator.GetExpectedPlayerPosition();
-        RaycastHit hit;
+        RaycastHit hit = new RaycastHit();
         if (Physics.Raycast(cannonRotator.cannon.position, expectedPos - cannonRotator.cannon.position, out hit, Mathf.Infinity, groundLayer))
         {
-            return hit.point;
+            isHitted = true;
+            return hit;
         }
+
+        isHitted = false;
+        return hit;
+    }
+    Vector3 GetLandingBallPoint()
+    {
+        bool hitted;
+        RaycastHit info = GetLandingBallInfo(out hitted);
+        if (hitted)
+        {
+            return info.point;
+        }
+
         return Vector3.zero;
     }
 

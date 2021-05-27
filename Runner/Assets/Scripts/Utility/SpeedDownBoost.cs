@@ -28,7 +28,7 @@ public class SpeedDownBoost : MonoBehaviour , IBoost
         {
             Time.timeScale = 1.0f / slowScale;
         }
-        yield return new WaitForSecondsRealtime(duration);
+        yield return new WaitForSeconds(duration / slowScale);
         Time.timeScale = 1;
         Debug.Log("end slow");
         Destroy(this.gameObject);

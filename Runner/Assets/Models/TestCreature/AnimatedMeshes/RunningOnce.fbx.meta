@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f3b2aab642baef14f92bc697a44ac821
+guid: dc52deebf689ce548ad565d0a996fe03
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: RunMixamo
+    second: RunningOnce
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: RunMixamo
+      name: RunningOnce
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
@@ -46,7 +46,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -104,8 +104,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 1adde4b60cd3b314791066f60614aecf
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3

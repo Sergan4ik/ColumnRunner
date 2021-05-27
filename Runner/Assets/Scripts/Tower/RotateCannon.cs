@@ -7,7 +7,7 @@ public class RotateCannon : MonoBehaviour
     Quaternion defaultCannonTransform , defaultRotatorTransform;
     public Transform cannon , rotator;
     public float maxCannonAngle = 20;
-    public float playerSpeed = 0;
+    private float playerSpeed = 0;
     [Range(0,1f)] public float Damping = 0.1f;
     [HideInInspector] public Vector3 target;
     [HideInInspector] public bool inVisionZone;
@@ -26,6 +26,7 @@ public class RotateCannon : MonoBehaviour
 
     private void Update()
     {
+        playerSpeed = World.worldSpeed;
         if (inVisionZone)
         {
             if (IsPlayerVisible())
@@ -53,9 +54,6 @@ public class RotateCannon : MonoBehaviour
         Debug.DrawRay(cannon.position, GetLookDirection() * 100, Color.red);
         Debug.DrawRay(cannon.position, cannon.forward * 100, Color.green);
         Debug.DrawRay(cannon.position, (GetExpectedPlayerPosition() - cannon.position) * 100, Color.magenta);
-    }
-    private void OnDrawGizmos()
-    {
         Gizmos.DrawSphere(GetExpectedPlayerPosition(), 0.05f);
     }
 
@@ -92,7 +90,7 @@ public class RotateCannon : MonoBehaviour
     bool IsPlayerVisible()
     {
         isHit = Physics.Raycast(cannon.position, GetLookDirection(), out hit, Mathf.Infinity, layerToIgnore);
-        if (1 << hit.collider.gameObject.layer == LayerMask.GetMask("Player"))
+        if (isHit && 1 << hit.collider.gameObject.layer == LayerMask.GetMask("Player"))
         {
             isHit = true;
             return true;
@@ -109,6 +107,7 @@ public class RotateCannon : MonoBehaviour
 
     public Vector3 GetExpectedPlayerPosition()
     {
+        //IsPlayerVisible();
         Collider col;
         Vector3 result = Vector3.zero;
         float time = GetExpectedTimeToHit();
