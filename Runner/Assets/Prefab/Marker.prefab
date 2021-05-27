@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3411163555581028696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3411163555581028698}
+  - component: {fileID: 3411163555581028699}
+  m_Layer: 0
+  m_Name: Marker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3411163555581028698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3411163555581028696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0188, y: 5.283, z: -3.022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3250029463331126063}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3411163555581028699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3411163555581028696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188c15c1fca4b184f9a69ce3b76d43cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxScaleSize: 50
+  timeBetweenSpawn: 1
+  increaseSizeSpeed: 100
+  circles:
+  - {fileID: 3250029463331126063}
+  circleToSpawn: {fileID: 5777180865058239701, guid: 2264744c77f50974c8984950f363171e,
+    type: 3}
+  duration: 1.1665508
+--- !u!1001 &3065515499843367449
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3411163555581028698}
+    m_Modifications:
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777180865058239701, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_Name
+      value: CIRCLE
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408587470318537241, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408587470318537244, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408587470318537247, guid: 2264744c77f50974c8984950f363171e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2264744c77f50974c8984950f363171e, type: 3}
+--- !u!4 &3250029463331126063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 545087876513761590, guid: 2264744c77f50974c8984950f363171e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3065515499843367449}
+  m_PrefabAsset: {fileID: 0}
