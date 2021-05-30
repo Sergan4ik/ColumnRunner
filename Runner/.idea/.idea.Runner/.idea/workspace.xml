@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be49ce9b-0e18-4721-a470-a88d7ca25df0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CamerasController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CamerasController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MainPlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/MainPlayerAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CM Blend/CM StateDrivenCamera Blends.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CM Blend/CM StateDrivenCamera Blends.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/CuteCreature/Material.006.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/CuteCreature/Material.006.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/TestCreature/AnimatedMeshes/MeshAndRunning.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/TestCreature/AnimatedMeshes/MeshAndRunning.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Ragdoll.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Ragdoll.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/Grass &amp; dead leafs pattern 02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/Grass &amp; dead leafs pattern 02.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Column.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Column.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tower/RotateCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tower/RotateCannon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tower/ShootCannonBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tower/ShootCannonBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SpeedDownBoost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SpeedDownBoost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/PostProcessing Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PostProcessing Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Buttons.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +28,6 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/RotateCannon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/ShootCannonBall.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SpeedDownBoost.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Column.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraControllers.cs" />
@@ -42,6 +35,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1t7ECsZNCsP8CxOF5ZAoArvcTQr" />
@@ -89,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622111606624</updated>
       <workItem from="1622111618342" duration="12352000" />
+      <workItem from="1622299500099" duration="2149000" />
     </task>
     <servers />
   </component>
@@ -107,6 +102,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

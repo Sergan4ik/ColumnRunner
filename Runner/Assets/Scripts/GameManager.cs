@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public bool gameStarted = false , gamePaused = false;
+    [HideInInspector] public bool gameStarted = false , gamePaused = false;
     
     private void Awake()
     {
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        CanvasManager.Instance.SwitchToCanvas(MenuType.GameOverlay);
         gameStarted = true;
         Player.instance.StartRun();
         CameraController.Instance.SetCameraLookToPlayer();

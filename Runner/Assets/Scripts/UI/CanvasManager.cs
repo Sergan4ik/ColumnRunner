@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public enum MenuType
 {
-    MainMenu = 0, UI = 1, Settings = 2, DieMenu = 3, Shop = 4
+    MainMenu = 0, GameOverlay = 1, Settings = 2, DieMenu = 3, Shop = 4 , TapToStartScreen = 5
 }
 
 public class CanvasManager : MonoBehaviour
@@ -16,6 +16,11 @@ public class CanvasManager : MonoBehaviour
     [HideInInspector] GameObject activeCanvas;
     public static CanvasManager Instance;
 
+    private void Awake()
+    {
+        activeCanvas = menuObjects[(int) MenuType.MainMenu];
+    }
+
     private void Start()
     {
         if (Instance == null)
@@ -23,8 +28,25 @@ public class CanvasManager : MonoBehaviour
     }
     public void SwitchToCanvas(int menuType)
     {
-        Instance.activeCanvas.SetActive(false);
-        Instance.activeCanvas = Instance.menuObjects[menuType];
+        
+        if (activeCanvas != null)
+            Instance.activeCanvas.SetActive(false);
+        Instance.activeCanvas = menuObjects[menuType];
+        Instance.activeCanvas.SetActive(true);
+    }
+    
+    public void SwitchToCanvas(GameObject targetCanvas)
+    {
+        if (activeCanvas != null)
+            Instance.activeCanvas.SetActive(false);
+        Instance.activeCanvas = targetCanvas;
+        Instance.activeCanvas.SetActive(true);
+    }
+    public void SwitchToCanvas(MenuType targetCanvas)
+    {
+        if (activeCanvas != null)
+            Instance.activeCanvas.SetActive(false);
+        Instance.activeCanvas = menuObjects[(int)targetCanvas];
         Instance.activeCanvas.SetActive(true);
     }
 }
