@@ -13,14 +13,10 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
             Instance = this;
         Time.timeScale = 1;
+        if (PlayerPrefs.GetInt("MaxHealth") < 1)
+            PlayerPrefs.SetInt("MaxHealth" , 1);
     }
     
-
-    private void Update()
-    {
-        if (!gameStarted && Input.GetKeyDown(KeyCode.Space))
-            StartGame();
-    }
 
     public void StartGame()
     {

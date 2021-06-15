@@ -19,6 +19,9 @@ public class Player : MonoBehaviour
         if (instance == null)
             instance = this;
     }
+    private void Start()
+    {
+    }
     private void Update()
     {
         #region Left/Right
@@ -56,6 +59,7 @@ public class Player : MonoBehaviour
 
     public void StartRun()
     {
+        playerStats.ChangeMaxHealth(PlayerPrefs.GetInt("MaxHealth"));
         playerAnimator.SetBool("isRunning", true);
     }
 

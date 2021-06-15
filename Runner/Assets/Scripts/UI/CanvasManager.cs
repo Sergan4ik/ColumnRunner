@@ -28,24 +28,38 @@ public class CanvasManager : MonoBehaviour
     }
     public void SwitchToCanvas(int menuType)
     {
-        
-        if (activeCanvas != null)
-            Instance.activeCanvas.SetActive(false);
+        foreach(GameObject gm in menuObjects)
+        {
+            if (gm != null)
+                gm.SetActive(false);
+        }
+        //if (activeCanvas != null)
+        //    Instance.activeCanvas.SetActive(false);
         Instance.activeCanvas = menuObjects[menuType];
         Instance.activeCanvas.SetActive(true);
     }
     
     public void SwitchToCanvas(GameObject targetCanvas)
     {
-        if (activeCanvas != null)
-            Instance.activeCanvas.SetActive(false);
+        foreach (GameObject gm in menuObjects)
+        {
+            if (gm != null)
+                gm.SetActive(false);
+        }
+        //if (activeCanvas != null)
+        //    Instance.activeCanvas.SetActive(false);
         Instance.activeCanvas = targetCanvas;
         Instance.activeCanvas.SetActive(true);
     }
     public void SwitchToCanvas(MenuType targetCanvas)
     {
-        if (activeCanvas != null)
-            Instance.activeCanvas.SetActive(false);
+        foreach (GameObject gm in menuObjects)
+        {
+            if (gm != null)
+                gm.SetActive(false);
+        }
+        //if (activeCanvas != null)
+        //    Instance.activeCanvas.SetActive(false);
         Instance.activeCanvas = menuObjects[(int)targetCanvas];
         Instance.activeCanvas.SetActive(true);
     }

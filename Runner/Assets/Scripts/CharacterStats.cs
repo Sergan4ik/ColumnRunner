@@ -45,7 +45,11 @@ public class CharacterStats : MonoBehaviour
             return false;
         }
     }
-
+    public void ChangeMaxHealth(int newVal)
+    {
+        maxHealth = newVal;
+        health = maxHealth;
+    }
     public virtual void Die()
     {
         IsAlive = false;

@@ -45,7 +45,7 @@ MonoBehaviour:
   - m_From: MenuCamera
     m_To: PlayerCamera
     m_Blend:
-      m_Style: 7
+      m_Style: 4
       m_Time: 1
       m_CustomCurve:
         serializedVersion: 2
