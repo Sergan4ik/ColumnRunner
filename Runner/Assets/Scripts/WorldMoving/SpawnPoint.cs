@@ -8,10 +8,6 @@ public class SpawnPoint : MonoBehaviour
     private bool spawnTrigger = false;
     public float radiusCheckSphere = 1;
     public LayerMask terrainLayer;
-    private void Start()
-    {
-        print(terrainLayer.value);
-    }
 
     private void Update()
     {

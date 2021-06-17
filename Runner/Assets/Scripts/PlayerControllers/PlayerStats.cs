@@ -20,6 +20,7 @@ public class PlayerStats : CharacterStats
             health = 0;
             Die();
         }
+        Debug.Log("Current health: " + health + " isAlive : " + IsAlive);
     }
     public override bool Heal(int cnt)
     {

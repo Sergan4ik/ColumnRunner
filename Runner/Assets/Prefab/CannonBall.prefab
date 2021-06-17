@@ -2285,12 +2285,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  direction: {x: -0.004029501, y: -0.32785192, z: -0.9447205}
+  direction: {x: 0.08363195, y: -0.5478386, z: -0.8323932}
   explosionPrefab: {fileID: 6083588582853856030, guid: 7de31b38a316f1a469eefd0182d65f0b,
     type: 3}
   explosionForce: 1000
   explosionRadius: 1.4
-  damageRadius: 0.7
+  damageRadius: 1
   damage: 1
   rb: {fileID: 0}
 --- !u!114 &2871594938339937307

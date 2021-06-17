@@ -13,6 +13,7 @@ public class PowerUp : MonoBehaviour
     public int[] prices;
     public Color activeColor, baseColor;
     public TextMeshProUGUI BuyButtonText;
+    [SerializeField] private Sound buySound , failSound;
     private void Start()
     {
         currentUp = PlayerPrefs.GetInt(powerUpName);
@@ -31,9 +32,11 @@ public class PowerUp : MonoBehaviour
             Debug.Log("Buyed " + powerUpName);
             PlayerPrefs.SetInt("Money" , PlayerPrefs.GetInt("Money") - prices[currentUp]);
             Upgrade();
+            AudioManager.Instance.PlaySound(buySound);
             //return true;
         }
         Debug.Log("Buy failed " + powerUpName);
+        AudioManager.Instance.PlaySound(failSound);
         //return false;
     }
 

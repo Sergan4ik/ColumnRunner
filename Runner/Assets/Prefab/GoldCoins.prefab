@@ -118,6 +118,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boostModel: {fileID: 933656187318806869}
   goldCount: 1
+  coinTakeSound:
+    volume: 1
+    pitch: 1
+    group: {fileID: -7588868943558063978, guid: bb0c127cdcbbef7488a493c4ae60f41b,
+      type: 2}
+    clip: {fileID: 8300000, guid: 1884a0e6b8810e84c8d6c9fe0a5a6663, type: 3}
+    loop: 0
+    mode3d: 0
+    playOnAwake: 1
 --- !u!114 &928864723334027553
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -65,17 +65,23 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        GameEvents.current.GameEnded();
+        
         playerModel.gameObject.SetActive(false);
+        
         GameObject curRagdoll = Instantiate(ragdoll.ragdoll, playerModel.transform.position , Quaternion.identity) as GameObject;
         CameraController.Instance.ragdoll = curRagdoll;
         CameraController.Instance.SetCameraLookToRagdoll();
         curRagdoll.transform.parent = this.transform;
+
+        
         StartCoroutine(SwitchToDieMenu());
+        
     }
 
     IEnumerator SwitchToDieMenu()
     {
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(0.3f);
         CanvasManager.Instance.SwitchToCanvas(MenuType.DieMenu);
     }
 }

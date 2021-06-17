@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        Debug.Log("Game Started");
+        GameEvents.current.GameStarted();
         CanvasManager.Instance.SwitchToCanvas(MenuType.GameOverlay);
         gameStarted = true;
         Player.instance.StartRun();
@@ -28,12 +30,14 @@ public class GameManager : MonoBehaviour
 
     public void UnPauseGame(float timeScale = 1.0f)
     {
+        GameEvents.current.GameUnpaused();
         Time.timeScale = timeScale;
         gamePaused = false;
     }
     
     public void PauseGame()
     {
+        GameEvents.current.GamePaused();
         Time.timeScale = 0;
         gamePaused = true;
     }
