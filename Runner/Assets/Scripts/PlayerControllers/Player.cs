@@ -70,5 +70,12 @@ public class Player : MonoBehaviour
         CameraController.Instance.ragdoll = curRagdoll;
         CameraController.Instance.SetCameraLookToRagdoll();
         curRagdoll.transform.parent = this.transform;
+        StartCoroutine(SwitchToDieMenu());
+    }
+
+    IEnumerator SwitchToDieMenu()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        CanvasManager.Instance.SwitchToCanvas(MenuType.DieMenu);
     }
 }

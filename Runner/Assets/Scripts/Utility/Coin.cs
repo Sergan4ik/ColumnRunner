@@ -6,7 +6,6 @@ public class Coin : MonoBehaviour, IBoost
 {
     public Transform boostModel;
     public int goldCount = 1;
-    private bool taken = false;
     public Transform BoostModel { get { return boostModel; } set { boostModel = value; } }
 
     private void Start()

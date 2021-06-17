@@ -10,8 +10,8 @@ public class Settings : MonoBehaviour
     [SerializeField] AudioMixerGroup MusicGroup, EffectGroup;
     [SerializeField] Slider MusicSlider, EffectSlider;
     [SerializeField] TMP_Dropdown qualityDropDown;
-
-    private void Start()
+    
+    public void Awake()
     {
         MusicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         EffectSlider.value = PlayerPrefs.GetFloat("EffectsVolume");

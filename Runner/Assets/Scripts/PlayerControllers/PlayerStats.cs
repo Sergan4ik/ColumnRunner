@@ -43,13 +43,13 @@ public class PlayerStats : CharacterStats
 
     public int GetHighScore()
     {
-        return PlayerPrefs.GetInt("HighScore");
+        return PlayerPrefs.GetInt("HighScore" , 0);
     }
 
     public void RememberHighScore()
     {
         if (PlayerPrefs.GetInt("HighScore") < Score)
-        PlayerPrefs.SetInt("HighScore" , Score);
+            PlayerPrefs.SetInt("HighScore" , Score);
     }
 
     public void ResetHighScore()
