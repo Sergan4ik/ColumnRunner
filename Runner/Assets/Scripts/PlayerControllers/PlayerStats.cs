@@ -11,6 +11,7 @@ public class PlayerStats : CharacterStats
     public override void TakeDamage(int damage)
     {
         Debug.Log("Current health: " + health);
+        GameEvents.current.TakeDamage(damage);
         if (health - damage > 0)
         {
             health -= damage;

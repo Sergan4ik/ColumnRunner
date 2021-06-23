@@ -11,6 +11,12 @@ public class HealthBar : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TwoColorGradient textGradient;
     public float changeSpeed = 0.1f;
+    public GameObject popUpDamageText;
+    private void Start()
+    {
+        GameEvents.current.OnTakeDamage += OnTakeDamage;
+    }
+
     private void Update()
     {
         UpdateHealthBar();
@@ -27,5 +33,19 @@ public class HealthBar : MonoBehaviour
     {
         float nextFillAmount = Mathf.Lerp(healthBar.fillAmount , Player.instance.playerStats.GetNormalizedHealth() , changeSpeed);
         healthBar.fillAmount = nextFillAmount;
+    }
+
+    private void OnTakeDamage(int amount)
+    {
+        print("damage " + amount.ToString());
+        TextMeshProUGUI text = popUpDamageText.GetComponent<TextMeshProUGUI>();
+        text.text = "-" + amount.ToString();
+        Animator anim = popUpDamageText.GetComponent<Animator>();
+        anim.SetTrigger("Play");
+    }
+
+    private void OnDestroy()
+    {
+        GameEvents.current.OnTakeDamage -= OnTakeDamage;
     }
 }

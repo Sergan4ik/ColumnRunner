@@ -19,13 +19,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PostProccesingEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/RotateCannon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/ShootCannonBall.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SpeedDownBoost.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Column.cs" />
@@ -34,14 +34,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicSwitcher.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/PlayerStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WorldMoving/SpawnPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Coin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PowerUp.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/RotateCannon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WorldMoving/World.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PostProccesingEffects.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllers/PlayerStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1t7ECsZNCsP8CxOF5ZAoArvcTQr" />
@@ -91,6 +95,8 @@
       <workItem from="1622111618342" duration="12352000" />
       <workItem from="1622299500099" duration="2149000" />
       <workItem from="1623921300025" duration="10391000" />
+      <workItem from="1624354630876" duration="4448000" />
+      <workItem from="1624436243271" duration="4409000" />
     </task>
     <servers />
   </component>
