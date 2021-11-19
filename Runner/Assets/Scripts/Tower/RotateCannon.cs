@@ -75,6 +75,12 @@ public class RotateCannon : MonoBehaviour
 
     void RotateHorizontal()
     {
+        //Vector3 euler, lookDirection =  GetRotatorLookDirection();
+        //lookDirection.y = 0;
+        //euler = Quaternion.LookRotation(lookDirection).eulerAngles;
+        //Debug.Log(euler);
+        //rotator.localRotation = Quaternion.Slerp(rotator.localRotation, Quaternion.Euler(euler), Damping * Time.deltaTime * 8);
+        //print(rotator.rotation.eulerAngles);
         rotator.LookAt(GetExpectedPlayerPosition());
         Vector3 euler = rotator.localRotation.eulerAngles;
         euler.x = euler.z = 0;

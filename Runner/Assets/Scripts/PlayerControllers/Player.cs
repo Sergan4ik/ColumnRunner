@@ -34,9 +34,7 @@ public class Player : MonoBehaviour
             platformsController.GoRight();
         }*/
         #endregion
-        
-        playerAnimator.SetFloat("RunSpeed" , Mathf.Lerp(1,1.7f, World.Instance.GetCurrentSpeedCoef() / 
-                                                             World.Instance.GetMaxSpeedCoef()));
+
 
         #region Rotation
         rotationController.Rotate();
@@ -44,7 +42,7 @@ public class Player : MonoBehaviour
 
         #region Jump
         jump.isFalling = !jump.GroundCheck();
-        if ((SwipeManager.swipeUp || (rotationController.keyBoard && Input.GetKeyDown(KeyCode.W))) && !jump.isFalling)
+        if (SwipeManager.swipeUp && !jump.isFalling)
         {
             playerAnimator.SetTrigger("Jump");
             jump.Jump();
@@ -52,7 +50,7 @@ public class Player : MonoBehaviour
         #endregion
 
         #region Roll
-        if (!jump.isFalling && (SwipeManager.swipeDown || (rotationController.keyBoard && Input.GetKeyDown(KeyCode.S))))
+        if (!jump.isFalling && SwipeManager.swipeDown)
         {
             playerAnimator.SetTrigger("Roll");
         }

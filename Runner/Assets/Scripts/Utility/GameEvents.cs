@@ -41,11 +41,5 @@ public class GameEvents : MonoBehaviour
     {
         OnGameUnpaused?.Invoke();
     }
-    public event Action<int> OnTakeDamage;
-
-    public void TakeDamage(int amount)
-    {
-        OnTakeDamage?.Invoke(amount);
-    }
     
 }
